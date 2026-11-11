@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: lauki-faq-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: AWS_REGION
+        value: ap-southeast-2
+      - key: AGENT_RUNTIME_ARN
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

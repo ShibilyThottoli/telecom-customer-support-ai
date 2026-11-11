@@ -1,0 +1,26 @@
+# Local environment variables (never commit secrets)
+.env
+.env.*
+!.env.example
+.env.local
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+backend/.env
+backend/.env.*
+# Node
+node_modules/
+
+# AgentCore CLI state (ignore local scratch like traces/logs, but commit the
+# deployed-state binding so a target's stack + credential ARNs are shared)
+agentcore/.cli/*
+!agentcore/.cli/deployed-state.json
+
+# AgentCore build cache (CodeZip dependency staging)
+agentcore/.cache/
+
+# CDK
+agentcore/cdk/cdk.out/

@@ -1,0 +1,16 @@
+{
+  "name": "ShibilyFAQAssistant",
+  "version": 2,
+  "managedBy": "CDK",
+  "runtimes": [
+    {
+      "name": "agent",
+      "build": "CodeZip",
+      "modelProvider": "Bedrock",
+      "entrypoint": "main.py",
+      "codeLocation": "app/agent",
+      "runtimeVersion": "PYTHON_3_13",
+      "protocol": "HTTP"
+    }
+  ]
+}

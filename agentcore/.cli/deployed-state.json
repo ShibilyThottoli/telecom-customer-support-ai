@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "default": {
+      "stackArn": "arn:aws:cloudformation:ap-southeast-2:884730507376:stack/AgentCore-ShibilyFAQAssistant-default/197f00a0-dd28-11f1-9fde-02fff4a814c5",
+      "resources": {
+        "credentials": {}
+      }
+    }
+  }
+}
